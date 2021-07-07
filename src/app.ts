@@ -5,11 +5,9 @@ import logger from "morgan";
 
 
 class App {
-    const app: GraphQLServer;
+    public app: GraphQLServer;
     constructor() {
-        this.app = new GraphQLServer({
-
-        });
+        this.app = new GraphQLServer({});
         this.middlewares();
     }
     private middlewares = (): void => {
